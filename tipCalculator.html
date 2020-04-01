@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="tipCalculator.css">
+</head>
+<body>
+<div class="calculator">
+    <form class="wrap" action="">
+        <div class="title">
+        <h1>Tip Calculator</h1>
+        </div>
+        <img class="titleDrip" src="img/drips.png" alt="">
+        <div class="your-bill">
+            <h2 class="heading-top">Your bill</h2>
+            <div class="bill-wrap" style="display: flex; margin-left: 80px">
+                <label for="bill" class="label-bill">$</label>
+                <input type="number" name="bill" id="bill" class="input" >
+            </div>
+        </div>
+        <div class="split-on">
+            <h2 class="heading">Split</h2>
+            <div class="split-on-wrap">
+                <span class="btn minus">-</span>
+                <input type="number" name="people" id="people"  min="1" class="people" value="1">
+                <span class="btn plus">+</span>
+            </div>
+        </div>
+        <div class="quality-wrap">
+            <h2 class="heading">Quality of service</h2>
+            <div style="display: flex; margin-left: 80px">
+            <input type="radio" name="quality" id="good" class="radio" value="20">
+            <label for="good" class="label-radio"><img src="img/happy.svg" alt="">Good</label>
+            <input type="radio" name="quality" id="normal" class="radio" value="10">
+            <label for="normal" class="label-radio"><img src="img/normal.svg" alt="">Normal</label>
+            <input type="radio" name="quality" id="poor" class="radio" value="5">
+            <label for="poor" class="label-radio"><img src="img/sad.svg" alt="">Poor</label>
+        </div>
+        </div>
+        <button type="submit" class="submit">Calculate</button>
+        <div class="tips">
+            <h2 class="heading">Tip:</h2>
+            <div class="tips-amount"></div>
+        </div>
+        <div class="total">
+            <h2 class="heading">Total amount:</h2>
+            <div class="total-amount"></div>
+        </div>
+
+    </form>
+</div>
+</body>
+<script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+<script src="tipCalculator.js"></script>
+</html>
